@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Hutsul Autentica</title>
+	<link rel="shortcut icon" href="assets/logo.png" type="image/png">
+
+	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="flexboxgrid.css">
+
+	<script src="main.js"></script>
+
+	<link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;700&display=swap" rel="stylesheet">
+	<script src="https://kit.fontawesome.com/612f582bb9.js" crossorigin="anonymous"></script> 
+
+	<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+</head>
+
+<body>
+	<div class="wrapper">
+		<div class="first">
+			<div class="logo-circle-wrapper">
+				<div class="logo-circle">
+					<img src="assets/logo_text_4x.png" class="logo">
+				</div>
+			</div>
+		</div>
+
+		<div class="header">
+			<div class="header-text"><img src="assets/text-menu-hutsul.svg"></div>
+			<img src="assets/logo-header.svg" class="header-logo">
+			<div class="menu">
+				<div class="menu-breaks"></div>
+				<a href="#about" class="menu-text">про нас</a>
+				<a href="#assortment" class="menu-text">асортимент</a>
+				<a href="#bay" class="menu-text">як замовити?</a>
+				<div class="menu-breaks"></div>
+			</div>
+		</div>
+
+		<div class="fill-bg">
+			<div class="content">
+				<div class="content-page" style="margin-bottom: 25%;">
+					<a id="about"></a>
+					<table>
+						<td class="table-left" style="justify-content: start">
+							<img src="photos/visulka@4x.png" style="width: 80%; height: 100%; position: relative;">
+						</td>
+						<td style="width: 45%;">
+							<h1 class="title1">Частинка гуцульської культури у Ваших руках!</h1>
+							<p><b style="color: var(--color-text-bg);">Hutsul Authentica</b> - це бренд, заснований
+								майстрами, які люблять мистецтво
+								Гуцульщини та поважають традиції.</p>
+							<p>Ми відновлюємо старовинні автентичні техніки та
+								прийоми виконання та повертаємо із забуття давні образи,
+								характерні для гірського регіону.
+								Наша ціль - відродити, популяризувати та зберегти
+								декоративно-прикладне мистецтво гуцулів та поділитись
+								ним з усіма!</p>
+						</td>
+					</table>
+				</div>
+
+
+				<div class="content-page">
+					<a id="assortment"></a>
+					<h1 class="title1" style="text-align: center;">У нас ви можете придбати:</h1>
+
+					<!-- display: none; transition: display 0.3s; -->
+					<div class="products-list hidden" id="products">
+						<table id="elementCandle" class="product hidden">
+							<td class="table-left">
+								<img src="photos/candel_2.png" style="width: 50%; position: relative;">
+							</td>
+							<td style="width: 50%;">
+								<span class="title2 text-bg">Різьблені вручну свічники-трійці</span>
+								<p>Аналог кольорового свічника 18–20 століть.
+									Різьба по дереву (липа).</p>
+								<p>Такий стиль був типовим для гуцульських свічників
+									18-19 століть. Вони використовувались як елемент
+									інтер’єру церкви.</p>
+								<p>Ручної роботи, зі спеціальним не небезпечним
+									захисним покриттям. Виріб виконує практичну та
+									декоративну функцію.</p>
+								<p>Цей автентичний свічник - чудове доповнення до
+									інтер’єру</p>
+							</td>
+						</table>
+
+						<table id="elementVisulka" class="product hidden">
+							<td class="table-left">
+								<img src="photos/angel_1.png" style="width: 50%; position: relative;">
+							</td>
+							<td style="width: 50%;">
+								<span class="title2 text-bg">Підвіски</span>
+								<p>Декоративні підвіски є сучасною інтерпритацією давніх декоративних елементів.
+									У підвісках використані фрагменти оздобоення свічників-трійць,
+									здебільшого - ангели.</p>
+								<p>Такі підвіски стануть гарним подарунком та доповненням до інтер’єру.
+									Також чудово підійдуть для оздоблення Різдвяного столу та ялинки.</p>
+							</td>
+						</table>
+
+						<table id="elementIcon" class="product hidden">
+							<td class="table-left">
+								<img src="photos/icon_yurii.png" style="width: 50%; position: relative;">
+							</td>
+							<td style="width: 50%;">
+								<span class="title2 text-bg">Ікони</span>
+								<p>Техніка малювання на склі має давні традиції, була відома у Стародав.
+									Римі та Візантії. У Центральній Європі розвиток живопису на склі
+									припадає на 18 ст.; активні центри діяли в Румунії, Словаччині, Польщі.
+									Наприкінці 19 ст. І. на с. набули особливого поширення в Україні, зокрема на
+									Гуцульщині.</p>
+								<p>Ікони на склі користувалися популярністю, були об’єктом культу і невід’ємою
+									складовою побуту народу, його естетичних і духовних запитів. </p>
+								<p>Ікона на склі, як правило, призначалися для сільских хат
+									(розміщувалися на видному місці, виконували роль домашнього іконостаса)
+									або придорожніх каплиць.</p>
+							</td>
+						</table>
+					</div>
+
+
+					<div style="margin-bottom: 10%;"></div>
+
+					<div class="thumbnails">
+						<div class="box">
+							<button style="background-image: url(photos/candel_2.webp);" class="image" id="btnCandle"
+								onclick="showCandle()"></button>
+							<p style="font-size: 20px;">Свічники-трійці</p>
+						</div>
+
+						<div class="box">
+							<button style="background-image: url(photos/angel_1.png);" class="image" id="btnVisulka"
+								onclick="showVisulka()"></button>
+							<p style="font-size: 20px;">Підвіски</p>
+						</div>
+
+						<div class="box">
+							<button style="background-image: url(photos/icon_yurii.png);" class="image" id="btnIcon"
+								onclick="showIcon()"></button>
+							<p style="font-size: 20px;">Гуцульські ікони</p>
+						</div>
+					</div>
+
+					<!-- <div class="row" style="justify-content: center;">
+						<div class="col-xs-12 col-md-5 box">
+							<button style="background-image: url(photos/candel_2.png);" class="image" id="btnCandle" onclick="showCandle()"></button>
+							<p style="font-size: 20px;">Свічники-трійці</p>
+						</div>
+						<div class="col-xs-12 col-md-5 box">
+							<button style="background-image: url(photos/candel_2.png);" class="image" id="btnCandle" onclick="showCandle()"></button>
+							<p style="font-size: 20px;">Свічники-трійці</p>
+						</div>
+						<div class="col-xs-12 col-md-5 box">
+							<button style="background-image: url(photos/candel_2.png);" class="image" id="btnCandle" onclick="showCandle()"></button>
+							<p style="font-size: 20px;">Свічники-трійці</p>
+						</div>
+					</div> -->
+				</div>
+
+				<div class="row margins10" style="height: auto;">
+					<a id="bay"></a>
+					<div class="col-xs-12 col-sm-12 col-md-5 vertical-center" style="height: 50vh;">
+						<div>
+							<h1 class="title1">Як замовити?</h1>
+
+							<p>З повним асортиментом товару ви можете ознайомитись за посиланням:</p>
+							<p><i class="fab fa-etsy"></i> <a
+									href="https://www.etsy.com/shop/HutsulAuthentica">www.etsy.com/shop/HutsulAuthentica</a>
+							</p>
+							<p>Для замовлення напишіть нам:</p>
+							<p><i class="fas fa-at"></i> hutsul.authentica@gmail.com</p>
+							<p>Або зателефонуйте за номером:</p>
+							<p><i class="fas fa-phone-alt"></i> +380 000 000 000</p>
+						</div>
+					</div>
+
+					<div class="col-xs-12 col-sm col-md" style="height: auto;">
+						<div class="bg-image"
+							style="background-image: url(photos/image_1.webp); background-position: right;"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+
+</html>

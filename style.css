@@ -1,0 +1,505 @@
+/* HTML --------------------------------------------------------------------- */
+body {
+	margin: 0px; 
+	font-family: 'Roboto Slab', serif;
+	font-size: 16px;
+	/* letter-spacing: -0.4px;
+	word-spacing: 2px; */
+	color: #000000;
+	font-weight: 400;
+
+	background-color: var(--color-bg);
+
+	height: 100%;
+	width: 100%;
+	/* min-height: 100%;
+	min-width: 100%; */
+
+	display: flex;
+    flex-direction: column;
+}
+
+:root {
+	font-family: Helvetica, sans-serif;
+	--breakpoint-xs: 0;
+    --breakpoint-sm: 576px;
+    --breakpoint-md: 768px;
+    --breakpoint-lg: 992px;
+	--breakpoint-xl: 1200px;
+
+	--color-bg: #333566;
+	--color-text: #cbcce8;
+	--color-text-h: #f59c1a;
+	--color-text-bg: #b54720;
+}
+
+/* ELEMENTS ----------------------------------------------------------------- */
+.wrapper {
+	display: flex;
+	flex-direction: column;
+	height: 100%;
+
+	/* background-color: var(--color-bg); */
+}
+
+/* 
+
+header {
+	flex: 0 0 auto;
+
+	min-height:72px;
+
+	background-color:#0288D1;
+	color: white;
+}
+
+footer {
+	flex: 0 0 auto;
+
+	width: 100%;
+	
+	background-color:#0288D1;
+	color: white;
+}*/
+@media only screen and (min-width: 48em) {
+	.content {
+		width: 100%;
+		
+		/* width: var(--breakpoint-sm); */
+		width: 36em;
+	  
+		margin: 0 auto;
+		/* flex: 1 0 auto; */
+	} 
+}
+
+@media only screen and (min-width: 62em) {
+	.content {
+		width: 100%;
+		
+		/* width: var(--breakpoint-md); */
+		width: 48em;
+	  
+		margin: 0 auto;
+		/* flex: 1 0 auto; */
+	} 
+}
+
+@media only screen and (min-width: 75em) {
+	.content {
+		width: 100%;
+		
+		/* width: var(--breakpoint-lg); */
+		width: 62em;
+	  
+		margin: 0 auto;
+		/* flex: 1 0 auto; */
+	} 
+}
+
+@media only screen and (min-width: 80em) {
+	.content {
+		width: 100%;
+		
+		/* width: var(--breakpoint-xl); */
+		width: 75em;
+	  
+		margin: 0 auto;
+		/* flex: 1 0 auto; */
+	} 
+}
+
+
+
+.content-page {
+	width: 100%;
+	height: 100%;
+
+	position: relative;
+}
+
+.fill-bg {
+	background-color: var(--color-bg);
+	/* background-image: url(assets/logo.png);
+	background-position: 90% 20%;
+	background-repeat: no-repeat; */
+	background-image: url(assets/bg.png);
+	background-position: center;
+	/* background-size: 100% 100%; */
+    background-repeat: repeat-y;
+	background-size: contain;
+	overflow: hidden;
+}
+
+p {
+	font-family: 'Roboto Slab', serif;
+	font-size: 18px;
+	font-weight: 400;
+	color: var(--color-text);
+}
+
+a {
+	font-family: 'Roboto Slab', serif;
+	font-size: 18px;
+	font-weight: 400;
+	color: var(--color-text);
+}
+
+.title1 {
+	font-family: 'Roboto Slab', serif;
+	font-size: 24px;
+	font-weight: 900;
+	color: var(--color-text-h);
+}
+
+.text-bg {
+	padding-top: 3px;
+	padding-bottom: 3px;
+	padding-right: 1px;
+	padding-left: 1px;
+
+	width: fit-content;
+
+	background-color: var(--color-text-bg);
+}
+
+.title2 {
+	font-family: 'Roboto Slab', serif;
+	font-size: 24px;
+	font-weight: 900;
+	color: var(--color-text);
+}
+
+.bg-image {
+	width: 100%; 
+	height: 100%; 
+
+	background-size: contain; 
+	background-repeat: no-repeat; 
+	background-position: center;
+}
+
+.table-left {
+	/* width: 50%; */
+	display: flex;
+	align-items: center;
+	justify-content: center
+}
+
+.vertical-center {
+	display: flex;
+	align-items: center;
+	justify-content: center
+}
+
+.margins10 {
+	margin-top: 25%;
+	margin-bottom: 10%;
+}
+
+
+/* -------------------------------------------------------------------------- */
+
+.header {
+	width: 100%;
+	height: 68px;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	/* justify-content: stretch; */
+	background-color: var(--color-text-h);
+
+	-webkit-box-shadow: 0px -15px 41px 5px rgba(0,0,0,0.3);
+	-moz-box-shadow: 0px -15px 41px 5px rgba(0,0,0,0.3);
+	box-shadow: 0px -15px 41px 5px rgba(0,0,0,0.3);
+
+	position: sticky;
+	top: 0;
+
+	z-index: 999;
+}
+
+.header-text {
+	flex-grow: 2;
+	width: 100%;
+
+	margin-right: 10px;
+
+	display:flex; 
+	flex-direction: row;
+	justify-content: space-around;
+	align-items: center;
+
+	display: none;
+}
+
+@media only screen and (min-width: 62em) {
+	.header-text {
+		flex-grow: 2;
+		width: 100%;
+	
+		margin-right: 10px;
+	
+		display:flex; 
+		flex-direction: row;
+		justify-content: space-around;
+		align-items: center;
+	}
+}
+
+
+.header-logo {
+	height: 100%; 
+	width: 25%;
+}
+
+/* -------------------------------------------------------------------------- */
+
+.menu {
+	align-self: right;
+
+	display:flex; 
+	flex-direction: row;
+	/* justify-content: space-around; */
+	justify-content: space-between;
+	align-items: center;
+
+	background-color: var(--color-text-h);
+
+	/* height: 68px; */
+	width: 100%;
+
+	flex-grow: 2;
+
+	margin-left: 10px;
+}
+
+.menu-text {
+	position: relative;
+	font-family: 'Roboto Slab', serif;
+	font-size: 19px;
+	font-weight: 900;
+
+	text-decoration: none;
+
+	color: var(--color-text-bg);
+	/* padding-top: 1px;
+	padding-bottom: 1px; */
+	/* padding-right: 10px;
+	padding-left: 10px;  */
+
+	padding: 1px;
+
+	height: 100%;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+
+	transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+
+.menu-text:hover {
+	color: var(--color-text-h);
+
+	width: fit-content;
+
+	background-color: var(--color-text-bg);
+
+	cursor: pointer;
+}
+
+.menu-breaks {
+	width: 1px;
+}
+
+/* -------------------------------------------------------------------------- */
+
+.first {
+	box-sizing: inherit;
+	display: block;
+	position: relative;
+	height: 100vh;
+	/* width: 100vw; */
+	/* The scaling of the images would add a horizontal scrollbar, so disable x overflow. */
+	overflow: hidden;
+}
+
+.first:after {
+	content: ' ';
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 200%;
+    height: 200%;
+    z-index: -1;
+    opacity: 0.35;
+
+	background-image: url(assets/pattern3x.png);
+	background-attachment: fixed;
+	background-position: center;
+	/* background-size: 100% 100%; */
+    background-repeat: repeat-y;
+	background-size: cover;
+	transform-origin: center center 0;
+	transform: translateZ(-1px) scale(1.1);
+}
+
+.logo-circle-wrapper {
+	height: 100vh;
+	/* width: 100vw; */
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.logo-circle {
+	/* width: 50%; */
+	width: 50vh;
+	height: 50vh;
+
+	background-color: var(--color-bg);
+	border-radius: 50%;
+	display: inline-block;
+
+	display: flex;
+	align-items: center;
+	justify-content: center
+}
+
+.logo {
+	align-self: center;
+
+	position: relative;
+	width: 80%;
+	/* height: 80%; */
+}
+
+/* -------------------------------------------------------------------------- */
+
+/* .shop-wrapper {
+	width: 100vw;
+	height: 100vh;
+
+    display: flex;
+    align-items: stretch;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.shop-element {
+	margin: 0 1em 2em 1em;
+	width: 30%;
+	
+	display: block;
+    margin: 0 0 2em 0;
+    width: 25%;
+	/* background-image: url(assets/pattern3x.png); /
+	background-position: center;
+	/* background-size: 100% 100%; /
+    background-repeat: no-repeat;
+	background-size: cover;
+	transform-origin: center center 0;
+} */
+
+.thumbnails {
+    display: flex;
+    align-items: stretch;
+    justify-content: center;
+	flex-wrap: wrap;
+	
+	width: 100%;
+	height: 50vh;
+}
+
+.box {
+    border-radius: 4px;
+    margin-bottom: 2em;
+    /* background: #2c2c32; */
+	text-align: center;
+	
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.thumbnails .box {
+    margin: 0em 2em 0em 2em;
+	width: 25%;
+	height: 75%;
+}
+
+.box .image {
+	margin: 0;
+	background: none;
+	color: inherit;
+	border: none;
+    outline: none;
+	
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: contain;
+
+	width: 100%;
+	height: 100%;
+
+	/* background: #2c2c32; */
+
+	transition: transform 0.3s ease-out;
+}
+
+.box .image:hover {
+	transform: scale(1.05);
+	border: none;
+    outline:none;
+}
+
+.box .image:active {
+	border: none;
+    outline:none;
+	color: inherit;
+
+	transform: scale(1.05);
+}
+
+.box .image .active {
+	border: none;
+    outline:none;
+	color: inherit;
+
+	transform: scale(1.05);
+}
+
+/* -------------------------------------------------------------------------- */
+
+.products-list {
+	height: 65vh;
+	overflow: hidden;
+}
+
+.products-list .hidden {
+	height: 0;
+}
+
+.product {
+	margin-top: 25px; 
+	display: block;
+	overflow: hidden;
+
+	transform: scaleY(1);
+	transition: transform 400ms ease 0ms, height 0.4s ease;
+}
+
+.hidden {
+	/* visibility: hidden !important; */
+	/* height: 0px !important;
+	opacity: 0 !important; */
+	transform: scaleY(0);
+	transition: transform 400ms ease 0ms, height 0.4s ease;
+
+	height: 0 !important;
+	line-height:0;
+}
+
+/* -------------------------------------------------------------------------- */
+
