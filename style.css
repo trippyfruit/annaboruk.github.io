@@ -473,7 +473,7 @@ a {
 /* -------------------------------------------------------------------------- */
 
 .products-list {
-	height: 65vh;
+	height: auto;
 	overflow: hidden;
 }
 
@@ -495,11 +495,54 @@ a {
 	/* height: 0px !important;
 	opacity: 0 !important; */
 	transform: scaleY(0);
+	/* transform: translateX(0); */
 	transition: transform 400ms ease 0ms, height 0.4s ease;
 
 	height: 0 !important;
+	width: 0 !important;
+	margin: 0 !important;
 	line-height:0;
+	border: none !important;
+	padding: 0 !important;
 }
 
 /* -------------------------------------------------------------------------- */
 
+.small-products-list {
+	height: 11vh; 
+	width: 100%; 
+
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-end;
+
+	margin-top: 10%;
+}
+
+.small-product {
+	height: 10vh; 
+	width: 10vh; 
+	/* display: block;  */
+	background-color: var(--color-text-bg); 
+
+	border-radius: 50%;
+	background-size: cover;
+
+	margin-left: 1em;
+	margin-right: 1em;
+	
+	border: 5px solid;
+	border-color: var(--color-text-bg);
+
+	outline: none;
+
+	transition: transform 0.3s ease-out;
+}
+
+.small-product:hover {
+	transform: scale(1.05);
+	outline: none;
+
+	border-color: var(--color-text-bg);
+	/* border: 5px solid; */
+}

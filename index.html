@@ -91,6 +91,7 @@
 						<table id="elementVisulka" class="product hidden">
 							<td class="table-left">
 								<img src="photos/angel_1.png" style="width: 50%; position: relative;">
+								<div style="background-image: url(photos/angel_1.png);" class="image"></div>
 							</td>
 							<td style="width: 50%;">
 								<span class="title2 text-bg">Підвіски</span>
@@ -122,10 +123,21 @@
 						</table>
 					</div>
 
+					<div class="small-products-list">
+						<button class="bg-image small-product hidden" style="background-image: url(photos/candel_2.webp); background-size: contain;" 
+							id="btnSmallCandle" onclick="showCandle()">
+						</button>
+						<button class="bg-image small-product hidden" style="background-image: url(photos/angel_1.png); background-size: contain;" 
+							id="btnSmallVisulka" onclick="showVisulka()">
+						</button>
+						<button class="bg-image small-product hidden" style="background-image: url(photos/icon_yurii.png); " 
+							id="btnSmallIcon" onclick="showIcon()">
+						</button>
+					</div>
 
 					<div style="margin-bottom: 10%;"></div>
 
-					<div class="thumbnails">
+					<div class="thumbnails" id="thumbnailsBig">
 						<div class="box">
 							<button style="background-image: url(photos/candel_2.webp);" class="image" id="btnCandle"
 								onclick="showCandle()"></button>
